@@ -57,5 +57,5 @@ def delete_restaurant():
     db.restaurants.delete_one({'name' : name})
     return jsonify({'result': 'success', 'msg': 'successfully deleted a restaurant'})
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run('0.0.0.0', port=5000, debug=True)
